@@ -1,15 +1,18 @@
 import express from "express";
+import imageRoutes from "./routes/imageRoutes";
 
-export const app = express();
+const app = express();
 
-const PORT = 3000;
+const PORT = process.env.PORT;
 
 app.use(express.json());
 
-app.get("/api", (req: express.Request, res: express.Response) => {
-  res.send("hello");
-});
+app.use("/api", imageRoutes);
 
-app.listen(PORT, () => {
-  console.log(`server started at http://localhost:${PORT}`);
-});
+if (process.env.NODE_ENV !== "test") {
+  app.listen(PORT, () => {
+    console.log(`Server is running at http://localhost:${PORT}`);
+  });
+}
+
+export default app;
