@@ -1,0 +1,25 @@
+# Node.js
+node_modules/
+dist/
+build/
+.env
+.env.local
+*.log
+npm-debug.log*
+
+# Typescript
+*.tsbuildinfo
+
+# Editor and OS-specific files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Jest and Coverage Reports
+coverage/
+jest-html-reporters-*.html
+
+# Cypress (if using for testing)
+cypress/videos/
+cypress/screenshots/
