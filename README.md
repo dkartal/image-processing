@@ -1,10 +1,6 @@
 
 ### Getting started
 
-0.  Clone this project
-
-        git clone
-
 1.  Make sure Node.js is installed
 
         node --version
