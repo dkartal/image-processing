@@ -44,3 +44,9 @@
 9.  Run the server
 
         npm run start
+
+10. Copy and paste the following to your browser to execute a GET request
+
+        http://localhost:3000/api/images?filename=cat.jpg&width=30&height=30
+
+11. Feel free to add more images to full directory and resize images.
